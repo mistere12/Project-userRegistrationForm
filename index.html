@@ -1,0 +1,34 @@
+<!DOCTYPE html>      <!--s1. !+enter to get Boilerplate html structure. provided by *Emmet*-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css"> <!--s2. added a link tag-->
+</head>
+<body>    <!--s4. start writing body. -->
+ <div class="container">
+    <h1>Registration Form</h1>   <!--1.header-->
+  <form id="form"> <!--2.form tag-->       <!--s5. after writing the body add divs for easy styling and give id to form-->
+        <div class="form-group">
+        <label for="name">Name:</label>  <!--3.label tag-->
+        <input type="text" id="name" name="name" required> <!--4.input tag-->
+    </div>
+        <!--now do the same for email and password-->
+        <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+        <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">Register</button> <!--5. add submit button tag-->
+    <p id="message"></p>  <!-- to message registration successful or not-->
+  </form>
+</div>
+
+    
+<script src="script.js"></script> <!--s3. added a script tag-->
+</body>
+</html>
